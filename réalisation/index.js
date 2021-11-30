@@ -1,18 +1,15 @@
-// declaration des variables 
-var btn;
+ var btn;
 var output;
 var number;
 var nombreDeviner;
 var attempt;
-
- // entrer: saiser 
+ 
  btn = document.getElementById('btn');
  output = document.getElementById('outputtext');
  number = Math.floor(Math.random() * 100);
  console.log(number)
  attemptOutPut = document.getElementById('tentative')
  attempt =10;
- // traitement 
 
 btn.addEventListener('click', function(){
     attempt--;
@@ -21,13 +18,13 @@ btn.addEventListener('click', function(){
         attemptOutPut.innerHTML=attempt +"-tentative"
         if ( nombreDeviner == number){
             if (nombreDeviner == number && attempt >=8 ) { 
-                output.innerHTML = 'Bravo, vous etes un Génie !!!'
+                output.innerHTML = 'Bravo, vous etes un Génie !!!' 
                 }else{
                 if(nombreDeviner == number && attempt >=4){
-                    output.innerHTML ='TU PEUX FAIRE MIEUX '  
+                    output.innerHTML ='TU PEUX FAIRE MIEUX  '  +(10-attempt)+' tentative';
                 }else{
                   if(nombreDeviner == number && attempt >=3){
-                    output.innerHTML ="es-tu sûr ,d'voir essayé"
+                    output.innerHTML ="es-tu sûr ,d'voir essayé  " +(10-attempt)+' tentative';
                   }
                 }
                 }
