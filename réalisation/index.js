@@ -23,10 +23,10 @@ btn.addEventListener('click', function(){
             if (nombreDeviner == number && attempt >=8 ) { 
                 output.innerHTML = 'Bravo, vous etes un Génie !!!'
                 }else{
-                if(nombreDeviner == number && attempt >=3){
+                if(nombreDeviner == number && attempt >=4){
                     output.innerHTML ='Félicitations, vous avez gagné '  
                 }else{
-                  if(nombreDeviner == number && attempt >=2){
+                  if(nombreDeviner == number && attempt >=3){
                     output.innerHTML ="es-tu sûr ,d'voir essayé"
                   }
                 }
