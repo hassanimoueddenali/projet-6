@@ -24,7 +24,11 @@ btn.addEventListener('click', function(){
                 output.innerHTML = 'Bravo, vous etes un Génie !!!'
                 }else{
                 if(nombreDeviner == number && attempt >=3){
-                    output.innerHTML ='Félicitations, vous avez gagné après , ' +attempt +" tentative" 
+                    output.innerHTML ='Félicitations, vous avez gagné '  
+                }else{
+                  if(nombreDeviner == number && attempt >=2){
+                    output.innerHTML ="es-tu sûr ,d'voir essayé"
+                  }
                 }
                 }
                 
@@ -42,11 +46,6 @@ btn.addEventListener('click', function(){
         attemptOutPut.innerHTML= "0-tentative"
     }
 
-
-
-
-
-  
   
 
 });
