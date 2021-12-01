@@ -1,4 +1,4 @@
- var btn;
+var btn;
 var output;
 var number;
 var nombreDeviner;
@@ -11,7 +11,7 @@ var attempt;
  attemptOutPut = document.getElementById('tentative')
  attempt =10;
 
-btn.addEventListener('click', function(){
+ function play(){
     attempt--;
     nombreDeviner = document.getElementById('userInput').value;
     if(attempt>0){
@@ -45,4 +45,4 @@ btn.addEventListener('click', function(){
 
   
 
-});
+};
