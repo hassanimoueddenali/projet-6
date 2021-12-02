@@ -12,7 +12,7 @@ var attempt;
  attempt =10;
 
  function play(){
-    attempt--;
+    attempt-=1;
     nombreDeviner = document.getElementById('userInput').value;
     if(attempt>0){
         attemptOutPut.innerHTML=attempt +"-tentative"

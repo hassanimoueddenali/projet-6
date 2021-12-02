@@ -4,7 +4,8 @@ var input;
 var btn;
 
 number = Math.floor(Math.random() * 1000);
-output = document.getElementById('outputtext');  
+output = document.getElementById('outputtext'); 
+console.log(number); 
 btn = document.getElementById('btn')
 
 function play(){  
