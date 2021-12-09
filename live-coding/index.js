@@ -1,23 +1,26 @@
-var number ;
-var output;
-var input;
-var btn;
+var btn ;
+var nombre ;
+var nomberdevenir ;
+var output ;
 
-number = Math.floor(Math.random() * 1000);
-output = document.getElementById('outputtext'); 
-console.log(number); 
-btn = document.getElementById('btn')
 
-function play(){  
-     input = document.getElementById('userInput').value;
- 
-    if(input == number){
-         output.innerHTML ='bravo'
-    }else{
-         if( input > number){
-             output.innerHTML ='se nommber est plus grand que'
-        }else{
-            output.innerHTML ='se nombre est plus petit que'
-        }    
+nombre = Math.floor(Math.random()*100)  ;
+btn = document.getElementById('btn') ;
+output = document.getElementById('outputtext') ;
+console.log(nombre) ;
+
+function play (){
+  nomberdevenir = document.getElementById('userinput').value;
+  if (nomberdevenir == nombre){
+      output.innerHTML = 'you win'
+  }else{
+    if(nomberdevenir > nombre){
+        output.innerHTML = 'you need to choose a smaller number'
     }
+    
+    else{
+        output.innerHTML = 'choose abigger number'
+    }
+
+  }
 };
