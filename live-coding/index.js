@@ -19,7 +19,7 @@ function play (){
     }
     
     else{
-        output.innerHTML = 'choose abigger number'
+        output.innerHTML = 'choose a bigger number'
     }
 
   }
